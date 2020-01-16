@@ -1,0 +1,27 @@
+Servidor Virtual:
+Criar hosts, criar domínio no próprio computador
+Procurar o arquivo: hosts 
+alterar arquivo no linux para criar um dominio no proprio PC: /etc/hosts
+
+127.0.0.1   localhost
+127.0.0.1   siteinstitucional.pc
+
+restart o apache
+
+já acessa direto: http://siteinstitucional.pc/
+
+Virtual host no linux: 
+arquivo: /etc/apache2/sites-available/000-default.conf
+
+<VirtualHost *:80>
+    ServerName siteinstitucional.pc
+    ServerAdmin webmaster@siteinstitucional.pc
+    DocumentRoot /var/www/html/siteinstitucional
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+**************************************************************************
+Após configurações acima, e estando instalado o composer, fazer a atualização:
+chmod 777 -R /var/www/html/siteinstitucional/
+composer update
