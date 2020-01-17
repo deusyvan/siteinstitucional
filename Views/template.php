@@ -14,7 +14,7 @@
                 <a href="/"><li>HOME</li></a>
                 <a href="<?php echo BASE_URL; ?>portfolio"><li>PORTFOLIO</li></a>
                 <a href="<?php echo BASE_URL; ?>sobre"><li>SOBRE</li></a>
-                <a href="<?php echo BASE_URL; ?>servicos"><li>SERVIÇOS</li></a>
+                <a href="<?php echo BASE_URL; ?>servico"><li>SERVIÇOS</li></a>
                 <a href="<?php echo BASE_URL; ?>contato"><li>CONTATO</li></a>
             </ul>
         </div>

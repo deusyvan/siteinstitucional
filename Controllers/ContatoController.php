@@ -3,7 +3,7 @@ namespace Controllers;
 
 use \Core\Controller;
 
-class UsuarioController extends Controller{
+class ContatoController extends Controller{
     
     public function index(){
         
