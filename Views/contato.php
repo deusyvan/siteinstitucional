@@ -1,5 +1,10 @@
 <h1>Contato</h1>
 <form method="POST" class="contato">
+	
+	<?php if(!empty($aviso)): ?>
+	
+	<?php endif;?>
+
 	Seu nome:<br/>
 	<input type="text" name="nome" /><br><br>
 	
