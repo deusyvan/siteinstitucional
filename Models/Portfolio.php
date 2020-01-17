@@ -5,7 +5,7 @@ use \Core\Model;
 use PDO;
 
 class Portfolio extends Model{
-    public function getTrabalhos($n){
+    public function getTrabalhos($n = ''){
         $array = array();
         
         $sql = "SELECT * FROM portfolio ";
