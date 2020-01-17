@@ -6,15 +6,9 @@ use \Core\Controller;
 class ContatoController extends Controller{
     
     public function index(){
+        $dados = array();
         
-    }
-    
-    public function cadastrar($nome,$sobrenome) {
-        echo "NOME: ".$nome."<br/>";
-        echo "Sobrenome: ".$sobrenome;
-    }
-    
-    public function abrir($id){
-        echo "Id do usuario: ".$id;
+        
+        $this->loadTemplate('contato', $dados);
     }
 }

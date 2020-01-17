@@ -29,11 +29,11 @@ h1 {
 }
 .container {
     width:100%;
-    max-width:960px;
+    max-width:960px;/*Desconto sobre o padding*/
     margin:auto;
     background-color:#FFFFFF;
     min-height:400px;
-    padding:10px;
+    padding:10px;/*Para as paginas internas desencostar na margem*/
 }
 .rodape {
     width:100%;
