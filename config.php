@@ -5,16 +5,16 @@ $config = array();
 
 if(ENVIRONMENT == 'development'){
     
-    define("BASE_URL", "http://localhost/estrutura_mvc/");
-    $config['dbname'] = 'estrutura_mvc';
+    define("BASE_URL", "http://siteinstitucional.pc/");
+    $config['dbname'] = 'siteinstitucional';
     $config['host'] = 'localhost';
     $config['dbuser'] = 'dfsweb';
     $config['dbpass'] = '28033011';
     
 } else {
     
-    define("BASE_URL", "http://meusite.com.br/");
-    $config['dbname'] = 'estrutura_mvc';
+    define("BASE_URL", "http://siteinstitucional.pc/");
+    $config['dbname'] = 'siteinstitucional';
     $config['host'] = 'localhost';
     $config['dbuser'] = 'dfsweb';
     $config['dbpass'] = '28033011';

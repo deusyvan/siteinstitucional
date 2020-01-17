@@ -2,16 +2,16 @@
 namespace Controllers;
 
 use \Core\Controller;
-use Models\Portfolio;
+use \Models\Portfolio;
 
-class HomeController extends Controller{
+class PortfolioController extends Controller{
     
     public function index(){
         $dados = array();
         
         $p = new Portfolio();
-        $dados['portfolio'] = $p->getTrabalhos(8);
+        $dados['portfolio'] = $p->getTrabalhos();
         
-        $this->loadTemplate('home', $dados);
+        $this->loadTemplate('portfolio', $dados);
     }
 }
